@@ -1,0 +1,117 @@
+* {
+	/* margin: 0; */
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+}
+
+/* color */
+.primary {
+	color: #15d16c;
+}
+
+/* Bacground per section */
+.hero {
+	margin-top: 78px;
+	background: #ffffff url("../assets/bg-hero.svg")no-repeat;
+}
+.bread {
+	margin-top: 78px;
+	background: #ffffff url("../assets/bg-bread.svg")no-repeat;
+}
+.bg-affiliate {
+	background-color: #15d16c;
+}
+.keuntungan {
+	background: #f8f9fa url(../assets/bg-keuntungan.svg) no-repeat;
+}
+.faq {
+	background: #f8f9fa url(../assets/bg-faq.svg) no-repeat;
+}
+.tatacara {
+	background: #ffffff url("../assets/bg-step.svg");
+}
+
+/* Custom Button */
+.btn-affiliate {
+	background-color: #15d16c;
+	border-color: #15d16c;
+	color: #ffffff;
+}
+
+.btn-affiliate:hover {
+	background-color: #20b565;
+	color: #ffffff;
+}
+
+/* Custom Effect */
+.blur {
+	background: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(10px);
+}
+
+/* Navbar */
+.nav-item {
+	margin-left: .8rem !important;
+	margin-right: .8rem !important;
+}
+
+/* Custom Card */
+.card-benefit {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 48px 24px;
+	gap: 16px;
+	border: none;
+	/* White */
+
+	background: #ffffff;
+	/* shadow */
+
+	box-shadow: 6px 6px 55px rgba(242, 243, 246, 0.86);
+	border-radius: 16px;
+}
+.card-benefit.card-body {
+	padding: 0px !important;
+}
+
+.accordion .card-header:after {
+	font-family: 'FontAwesome';
+	content: "\f068";
+	float: right;
+}
+.accordion .card-header.collapsed:after {
+	/* symbol for "collapsed" panels */
+	content: "\f067";
+}
+.card-accordion {
+	border: none;
+	background-color: #ffffff;
+	border-radius: 16px;
+	/* shadow */
+
+	box-shadow: 6px 6px 55px rgba(242, 243, 246, 0.86);
+	border-radius: 16px;
+}
+.card-header {
+	background-color: #ffffff;
+	border-bottom: px solid rgba(0, 0, 0, .125);
+}
+.card-title {
+	color: #000;
+}
+
+li {
+	padding-bottom: 4px !important;
+}
