@@ -5,11 +5,492 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notaris & PPAT M. Ilham</title>
+    <title>Notaris & PPAT M.Ilham</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <!--Font Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
+    <!-- NAVBAR-->
+    <nav class="navbar fixed-top navbar-expand-lg py-3 navbar-light  blur ">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <!-- Logo Image -->
+                <img src="assets/img/logo.png" width="auto" height="34" alt="" class="d-inline-block align-middle mr-2">
+            </a>
+
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="profil.html" class="nav-link">Profil</a></li>
+                    <li class="nav-item"><a href="hubungikami.html" class="nav-link">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="d-flex align-items-center hero ">
+        <div class="container-fluid">
+            <div class="row py-sm-5 py-md-0 py-xl-0 flex-sm-row flex-md-row flex-lg-row flex-sm-column-reverse
+                flex-md-column-reverse flex-column-reverse pt-5">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 py-6 py-xl-0 py-lg-5 py-md-3 py-sm-1 d-flex
+                    align-items-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
+                    <div class="mb-4 text-xl-start px-md-0 px-lg-20 px-xl-5">
+                        <!-- Caption -->
+                        <!-- hidden only on sm -->
+                        <h1 class="display-4 font-weight-bold d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                            Bagi Link, Dapat Komisi
+                        </h1>
+                        <!-- visible only on sm -->
+                        <h1 class="display-5 font-weight-bold d-sm-block d-md-none d-lg-none d-xl-none">
+                            Bagi Link, Dapat Komisi
+                        </h1>
+                        <!-- always visible on any screen -->
+                        <h3 class="my-3 lead text-black  " style="line-height: 2rem;">
+                            Raih penghasilan jutaan rupiah, dengan gabung Affiliate Sadigit!
+                        </h3>
+
+                        <button onclick="window.location.href='daftar.html'" type="button"
+                            class="btn btn-affiliate align-middle mr-lg-2 mr-xl-2 btn-lg">
+                            Gabung Sekarang
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12  col-sm-12 d-flex justify-content-center align-items-center pl-xl-4 pl-lg-4 pl-sm-0 pt-xl-4 pt-lg-4 pt-sm-0 pb-4 py-md-5"
+                    style="position: relative;">
+                    <img src="assets/img/hero.svg" alt="" class="img-fluid" style="position: relative;">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- Keuntungan Section -->
+    <section id="keuntungan" class="main d-flex bg-light py-5 keuntungan">
+        <div class="container">
+            <div class="section-title my-lg-5 my-sm-2">
+                <!-- hidden only on sm -->
+                <h1 class="display-4 font-weight-bold d-none d-sm-none d-md-block d-lg-block d-xl-block text-center">
+                    Keuntungan
+                </h1>
+                <!-- visible only on sm -->
+                <h1 class="display-5 font-weight-bold d-sm-block d-md-none d-lg-none d-xl-none  text-center">
+                    Keuntungan
+                </h1>
+
+                <h3 class="lead text-black text-center">
+                    Keuntungan yang kamu dapatkan ketika bergabung.
+                </h3>
+            </div>
+            <div class="row  flex-column-reverse flex-sm-row flex-md-row flex-lg-row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 pb-5 pb-sm-0">
+                    <div class="card card-benefit mb-4">
+                        <img src="assets/img/app.svg" class="d-inline-block align-top" width="auto" height="auto"
+                            alt="...">
+                        <div class="card-body p-0">
+                            <h5 class="card-title">Bebas Pilih produk</h5>
+                            <p class="card-text">Bebas memilih produk yang akan kamu inginkan.</p>
+                        </div>
+                    </div>
+                    <div class="card card-benefit mb-4">
+                        <img src="assets/img/komisi.svg" class="d-inline-block align-top" alt="...">
+                        <div class="card-body p-0">
+                            <h5 class="card-title">Komisi Besar</h5>
+                            <p class="card-text">Komisi besar hingga 15%, dapatkan penghasilan dengan cepat.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 pt-xl-5 pt-lg-5 pt-md-5 pt-sm-0 pt-0">
+                    <div class="card card-benefit mb-4">
+                        <img src="assets/img/realtime.svg" class="d-inline-block align-top" width="auto" height="auto"
+                            alt="...">
+                        <div class="card-body p-0">
+                            <h5 class="card-title">Real Time</h5>
+                            <p class="card-text">Pantau pendapatan kamu secara real time.</p>
+                        </div>
+                    </div>
+                    <div class="card card-benefit mb-4">
+                        <img src="assets/img/penarikan.svg" class="d-inline-block align-top" alt="...">
+                        <div class="card-body p-0">
+                            <h5 class="card-title">Penarikan Mudah</h5>
+                            <p class="card-text">Tarik kapanpun dan dimanapun .</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 my-auto">
+                    <div class="card card-benefit mb-4">
+                        <img src="assets/img/bonus.svg" class="d-inline-block align-top" alt="...">
+                        <div class="card-body p-0">
+                            <h5 class="card-title">Dapatkan Bonus</h5>
+                            <p class="card-text">Dapatkan bonus tambahan dari pembelian sofware berlangganan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tatacara Section-->
+    <section id="cara" class="main d-flex tatacara py-5">
+        <div class="container-fluid justify-content-center">
+            <div class="section-title my-lg-5 my-sm-2">
+                <!-- hidden only on sm -->
+                <h1 class="display-4 font-weight-bold d-none d-sm-none d-md-block d-lg-block d-xl-block text-center">
+                    Caranya Gimana?
+                </h1>
+                <!-- visible only on sm -->
+                <h1 class="display-5 font-weight-bold d-sm-block d-md-none d-lg-none d-xl-none  text-center">
+                    Caranya Gimana?
+                </h1>
+                <h3 class="lead text-black text-center">
+                    4 langkah mudah untuk memulai.
+                </h3>
+            </div>
+            <!--Step 1-->
+            <div
+                class="row flex-xl-row flex-lg-row flex-md-row flex-sm-row flex-sm-column-reverse flex-md-column-reverse flex-column-reverse my-lg-3 my-sm-2">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 py-6 py-xl-0 px-md-5 d-flex align-items-center">
+                    <div class="mb-4 text-xl-start px-md-8 px-lg-20 px-xl-5">
+                        <!-- Caption -->
+                        <!-- hidden only on sm -->
+                        <h1 class="display-5 font-weight-bold d-none d-sm-none d-md-block d-lg-block
+                            d-xl-block">
+                            #1 Pilih Produk
+                        </h1>
+                        <!-- visible only on sm -->
+                        <h1 class="h2 font-weight-bold d-sm-block d-md-none d-lg-none d-xl-none">
+                            #1 Pilih Produk
+                        </h1>
+                        <!-- always visible on any screen -->
+                        <h4 class="my-2 lead text-black pe-lg-6 text-justify">
+                            Pilih produk sofware yang kami sediakan untuk kamu promosikan.
+                        </h4>
+
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center pl-xl-4 pl-lg-4 pl-sm-0 pt-xl-4 pt-lg-4 pt-sm-0 pb-4 py-md-5"
+                    style="position: relative;">
+                    <img src="assets/img/step1.png" alt="" class="img-fluid" style="position: relative;">
+                </div>
+            </div>
+            <!--Step 2-->
+            <div class="row my-lg-3 my-sm-2">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center pl-xl-4 pl-lg-4 pl-sm-0 pt-xl-4 pt-lg-4 pt-sm-0 pb-4 py-md-5"
+                    style="position: relative;">
+                    <img src="assets/img/step2.png" alt="" class="img-fluid mw-md-160 pt-5" style="position: relative;">
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 py-6 py-xl-0 px-md-5 d-flex align-items-center">
+                    <div class="mb-4 text-xl-start px-md-8 px-lg-20 px-xl-5">
+                        <!-- Caption -->
+                        <!-- hidden only on sm -->
+                        <h1
+                            class="display-5 font-weight-bold font-talas-head d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                            #2 Promosikan Link Affiliate
+                        </h1>
+                        <!-- visible only on sm -->
+                        <h1 class="h2 font-weight-bold font-talas-head d-sm-block d-md-none d-lg-none d-xl-none">
+                            #2 Promosikan Link Affiliate
+                        </h1>
+                        <!-- always visible on any screen -->
+                        <h4 class="my-2 lead text-black pe-lg-6 font-talas-body text-justify">
+                            Buat konten dan bagikan ke media sosail kamu, semakin banyak orang tau kamu, semakin besar
+                            kesempatan orang tertarik dengan produk yang kamu bagikan.
+                        </h4>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--Step 3-->
+            <div
+                class="row flex-xl-row  flex-lg-row flex-md-row flex-sm-row my-lg-3 flex-sm-column-reverse flex-md-column-reverse flex-column-reverse my-sm-2">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 py-6 py-xl-0 px-md-5 d-flex align-items-center">
+                    <div class="mb-4 text-xl-start px-md-8 px-lg-20 px-xl-5">
+                        <!-- Caption -->
+                        <!-- hidden only on sm -->
+                        <h1
+                            class="display-5 font-weight-bold font-talas-head d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                            #3 Proses Transaksi
+                        </h1>
+                        <!-- visible only on sm -->
+                        <h1 class="h2 font-weight-bold font-talas-head d-sm-block d-md-none d-lg-none d-xl-none">
+                            #3 Proses Transaksi
+                        </h1>
+                        <!-- always visible on any screen -->
+                        <h4 class="my-2 lead text-black pe-lg-6 font-talas-body text-justify">
+                            Apabila pembeli yang menggunakan link kamu, setuju dan lanjut membuat kesepakatan pembelian
+                            produk dengan kami maka kamu akan mendapatkan komisi.
+                        </h4>
+
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center pl-xl-4 pl-lg-4 pl-sm-0 pt-xl-4 pt-lg-4 pt-sm-0 pb-4 py-md-5"
+                    style="position: relative;">
+                    <img src="assets/img/step3.png" alt="" class="img-fluid pt-5" style="position: relative;">
+                </div>
+            </div>
+            <!--Step 4-->
+            <div class="row my-lg-3 my-sm-2">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center align-items-center pl-xl-4 pl-lg-4 pl-sm-0 pt-xl-4 pt-lg-4 pt-sm-0 pb-4 py-md-5"
+                    style="position: relative;">
+                    <img src="assets/img/step4.png" alt="" class="img-fluid mw-md-160 pt-5" style="position: relative;">
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 py-6 py-xl-0 px-md-5 d-flex align-items-center">
+                    <div class="mb-4 text-xl-start px-md-8 px-lg-20 px-xl-5">
+                        <!-- Caption -->
+                        <!-- hidden only on sm -->
+                        <h1
+                            class="display-5 font-weight-bold font-talas-head d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                            #4 Dapatkan Komisi
+                        </h1>
+                        <!-- visible only on sm -->
+                        <h1 class="h2 font-weight-bold font-talas-head d-sm-block d-md-none d-lg-none d-xl-none">
+                            #4 Dapatkan Komisi
+                        </h1>
+                        <!-- always visible on any screen -->
+                        <h4 class="my-2 lead text-black pe-lg-6 font-talas-body text-justify">
+                            Komisi dapat kamu ambil setelah proses transaksi dan terjadi kesepatan antara pembeli dengan
+                            perusahaan kami, dan kamu akan menerima komisi sesuai aplikasi yang kamu berhasil jual.
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5">
+        <div class="container">
+            <!-- row -->
+            <div class="row align-items-center p-4 bg-light" style="border-radius: 18px;">
+                <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7">
+                    <!-- heading -->
+                    <div>
+                        <!-- hidden only on sm -->
+                        <h1 class="display-5  d-none d-sm-none d-md-block d-lg-block d-xl-block text-dark">
+                            Dapatkan penghasilan!
+                        </h1>
+                        <!-- visible only on sm -->
+                        <h1 class="h5 text-dark-50 d-sm-block d-md-none d-lg-none d-xl-none">
+                            Dapatkan penghasilan!
+                        </h1>
+                        <!-- text -->
+                        <p class="text-dark mb-4">
+                            Daftar dan dapatkan penghasilan tambahan dengan komisi hingga 15%.
+                        </p>
+                        <!-- btn -->
+                        <button onclick="window.location.href='daftar.html'" type="button" class="btn btn-secondary">
+                            Gabung Sekarang
+                        </button>
+                    </div>
+                </div>
+                <!-- img -->
+                <div class=" col-xl-5 col-lg-5 col-md-5 col-sm-5 text-lg-end text-center pt-5">
+                    <img src="assets/img/cta.png" alt="" class=" img-fluid">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- FAQ Section-->
+    <section class="main d-flex faq py-5">
+        <div class="container justify-content-center">
+            <div class="section-title my-lg-5">
+                <!-- hidden only on sm -->
+                <h1 class="display-4 font-weight-bold d-none d-sm-none d-md-block d-lg-block d-xl-block text-center">
+                    Sering Ditanyakan
+                </h1>
+                <!-- visible only on sm -->
+                <h1 class="display-5 font-weight-bold d-sm-block d-md-none d-lg-none d-xl-none  text-center">
+                    Sering Ditanyakan
+                </h1>
+                <h3 class="lead text-black text-center">
+                    Temukan jawaban kamu disini!.
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="accordion" class="accordion">
+                        <div class="card card-accordion">
+                            <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+                                <a class="card-title">
+                                    Produk apa saja yang bisa saya promosikan? Apakah ada batasannya?
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="card-body collapse" data-parent="#accordion"
+                                style="background-color: #fafafa;">
+                                <p>Semua produk yang terdapat pada website kami, semuanya bisa di
+                                    promosikan, dan tidak
+                                    ada batasan untuk mempromosikan produk
+                                </p>
+                            </div>
+                            <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseTwo">
+                                <a class="card-title">
+                                    Kapan saya akan menerima komisi? Ke mana uang saya akan ditransfer?
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="card-body collapse" data-parent="#accordion"
+                                style="background-color: #fafafa;">
+                                <p>Apabila orang yang mengguanakan link Affiliate kamu berhasil melakukan transaksi atau
+                                    kesepakat terhadap perusahaan kami.
+                                </p>
+                            </div>
+                            <div class="card-header collapsed" data-toggle="collapse" data-parent="#accordion"
+                                href="#collapseThree">
+                                <a class="card-title">
+                                    Apakah akun media sosial saya harus dibuat public?
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="card-body collapse" data-parent="#accordion"
+                                style="background-color: #fafafa;">
+                                <p>Tidak perlu. Namun, kami menyarankan untuk membuatnya menjadi
+                                    public untuk memperluas reach kamu, sehingga kesempatan kamu untuk mendapatkan
+                                    komisi lebih besar.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <section class="main d-flex pb-3 pt-5 bg-white">
+        <div class="container-fluid align-items-center justify-content-center">
+            <div class="row px-lg-5 px-xl-5 mx-lg-5 mx-xl-5">
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 py-3 py-md-3">
+                    <img src="assets/logo.svg" width="auto" height="28" alt="" class="d-inline-block align-middle mr-2">
+                    <!-- always visible on any screen -->
+                    <p class="my-2 text-dark font-weight-light" style="line-height: 2rem;">
+                        Jasa konsultan IT, perdagangan software & hardware, juga pengembangan software pemerintahan.
+                    </p>
+                    <button type="button" class="btn btn-circle" href="#">
+                        <i class="fa-brands fa-instagram text-dark"></i>
+                    </button>
+                    <button type="button" class="btn btn-circle " href="#">
+                        <i class="fa-brands fa-twitter text-dark"></i>
+                    </button>
+                    <button type="button" class="btn btn-circle" href="#">
+                        <i class="fa-brands fa-youtube text-dark"></i>
+                    </button>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 py-3 py-md-3">
+                    <h2 class="display-5 font-weight-bold text-dark">
+                        Akses Cepat
+                    </h2>
+
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-0">
+                        <li><a class="link-sm link-secondary text-dark" href="https://www.sadigit.co.id/"
+                                target="_blank">Web Utama<i class="bi-box-arrow-up-right small ms-1"></i></a></li>
+                        <li><a class="link-sm link-secondary text-dark " href="https://www.arraydigital.co.id/"
+                                target="_blank">Array
+                                Digital</a></li>
+                        <li><a class="link-sm link-secondary text-dark " href="http://sumedanglaptop.com/"
+                                target="_blank">Sumedang Laptop</a></li>
+                    </ul>
+                    <!-- End List -->
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 py-3 py-md-3">
+                    <h2 class="display-5 font-weight-bold text-dark ">
+                        Product
+                    </h2>
+
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-0">
+                        <li><a class="link-sm link-secondary text-dark" href="#">Simasko 2<i
+                                    class="bi-box-arrow-up-right small ms-1"></i></a></li>
+                        <li><a class="link-sm link-secondary text-dark " href="#">Smart Resto 3</a></li>
+                        <li><a class="link-sm link-secondary text-dark " href="#">Smart Grosir Online</a>
+                        </li>
+                        <li><a class="link-sm link-secondary text-dark" href="#">Sofware Mesin Antrian</a>
+                        </li>
+
+                    </ul>
+                    <!-- End List -->
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 py-3 py-md-3">
+                    <h2 class="display-5 font-weight-bold text-dark">
+                        Hubungi Kami
+                    </h2>
+
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 mb-5">
+                        <li>
+                            <p class="text-dark">
+                                <i class="fa-solid fa-envelope mr-2"></i> admin@sadigit.co.id
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-dark">
+                                <i class="fa-solid fa-phone mr-2"></i>(0261) 2148486
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-dark">
+                                <i class="fa-brands fa-whatsapp-square mr-2"></i> 0853-1513-1514
+                            </p>
+                        </li>
+
+                        <li>
+                            <p class="text-dark">
+                                <i class="fa-solid fa-location-dot mr-2"></i>Perum Golden Housing Islamic Blok K No 7,
+                                Kotakulon, Kec. Sumedang Sel., Kabupaten Sumedang, Jawa Barat 45311
+                            </p>
+                        </li>
+                    </ul>
+                    <!-- End List -->
+                </div>
+            </div>
+            <!-- End Row -->
+
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="w-md-85 text-lg-center mx-lg-auto">
+                        <p class="text-dark font-talas-body text-center">© 2022 Sadigit Affiliate.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Copyright -->
+        </div>
+    </section>
+
+    <!--JS-->
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
