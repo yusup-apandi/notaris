@@ -118,6 +118,10 @@ h6 {
 	color: #ffffff;
 }
 
+.card-berita img {
+	border-radius: 8px !important;
+}
+
 /* Carousel Testimony */
 .carousel .carousel-item {
 	color: #999;
@@ -171,5 +175,12 @@ h6 {
 
 .btn-white:hover {
 	background-color: #ffffff;
+	color: #182d48;
+}
+
+.c-green {
+	color: #13987a;
+}
+.c-title {
 	color: #182d48;
 }
