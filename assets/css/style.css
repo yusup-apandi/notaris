@@ -54,9 +54,14 @@ h6 {
 	border-bottom: 4px solid #26d48a;
 }
 
+/* Bacground Hero */
 .hero {
-	margin-top: 78px;
-	background: #ffffff url("/assets/img/bg-hero.svg")no-repeat;
+	margin-top: 84px;
+	background-color: #ffffff;
+	background-image: url("/assets/img/bg-hero.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .keuntungan {
@@ -113,7 +118,7 @@ h6 {
 	color: #ffffff;
 }
 
-/* Caraosel */
+/* Carousel Testimony */
 .carousel .carousel-item {
 	color: #999;
 	overflow: hidden;
@@ -145,9 +150,26 @@ h6 {
 	border: 5px double;
 }
 
-/* Percobaan */
+/*Custum Button */
 
-.swiper {
-	width: auto;
-	height: 200px;
+.btn-notaris {
+	background-color: #182d48;
+	border-color: #182d48;
+	color: #ffffff;
+}
+
+.btn-notaris:hover {
+	background-color: #071229;
+	color: #ffffff;
+}
+
+.btn-white {
+	background-color: #fafafa;
+	border-color: #fafafa;
+	color: #182d48;
+}
+
+.btn-white:hover {
+	background-color: #ffffff;
+	color: #182d48;
 }
