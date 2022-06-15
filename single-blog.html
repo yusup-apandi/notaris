@@ -27,8 +27,8 @@
 
 </head>
 
-<body style="background-color: white;">
-    <!-- Navbar Section -->
+<body>
+    <!-- NAVBAR-->
     <nav class="navbar fixed-top navbar-expand-lg py-3 navbar-light  blur ">
         <div class="container-fluid">
             <a href="index.html" class="navbar-brand">
@@ -42,8 +42,16 @@
 
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li class="nav-item "><a href="index.html" class="nav-link">Beranda</a></li>
                     <li class="nav-item active"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Layanan</a>
+                        <div class="dropdown-menu" style="border: none; background-color:#fafafa">
+                            <a class="dropdown-item" href="notaris.html">Notaris</a>
+                            <a class="dropdown-item" href="ppat.html">PPAT</a>
+                        </div>
+                    </li>
                     <li class="nav-item"><a href="profil.html" class="nav-link">Profil</a></li>
                     <li class="nav-item"><a href="hubungikami.html" class="nav-link">Hubungi Kami</a></li>
                 </ul>
@@ -62,122 +70,77 @@
                     <ol class="breadcrumb bg-transparent d-flex justify-content-center">
                         <li class="breadcrumb-item"><a class="text-dark" href="./index.html">Home</a>
                         </li>
-                        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                        <li class="breadcrumb-item font-talas-head"><a class="text-dark" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="breadcrumb-item active font-talas-head" aria-current="page">Travel’s theme for 2022?
+                            ‘Go
+                            big’</li>
                     </ol>
                 </nav>
             </div>
         </div>
     </section>
 
-    <!-- Content Section -->
+    <!-- Article Section -->
     <section class="main py-4">
-        <div class="container">
-            <!-- Items -->
-            <div class="row">
-                <!-- blog list -->
+        <div class="container-fluid px-lg-5">
+            <div class="row px-lg-5">
+                <!-- Blog -->
                 <div class="col-lg-8 col-md-8 col-12">
                     <!-- Article List -->
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12">
-                            <div class="row no-gutters mb-4 shadow-sm rounded-lg bg-light">
-                                <!-- article cover -->
-                                <div class="col-12 col-md-3 col-lg-4 p-2">
-                                    <img class="img-fluid rounded-lg" src="assets/img/sample/berita.png">
-                                </div>
-                                <!-- article content -->
-                                <div class="col-12 col-md-8 col-lg-8 py-2 px-2 py-md-3 px-md-3">
-                                    <h5 class="text-justify">This motivational video will help you achieve a better
-                                        work-life balance</h3>
-                                        <div class="mb-1 text-muted small mb-3 ">
-                                            <i class="fa-regular fa-calendar mr-3">
-                                                <span>22 Feb 2022</span>
-                                            </i>
-                                            <i class="fa-regular fa-folder">
-                                                <span>Lifestyle</span>
-                                            </i>
-                                        </div>
-                                        <p class="card-text mb-2 text-justify text-secondary">Sara began the talk by
-                                            chronicling her ‘busy’ life, she held up multiple work requirements and
-                                            didn’t have any energy upon reaching home.</p>
-                                        <a href="./single-blog.html" class="stretched-link text-dark mt-5"><u>Read
-                                                more</u></a>
-                                </div>
-                            </div>
+                    <div class="row no-gutters">
+                        <!-- article cover -->
+                        <div class="col-12">
+                            <img class="img article-cover rounded-lg" src="assets/img/sample/blog.png"
+                                style="aspect-ratio: 2/1;object-fit: cover;">
                         </div>
-                        <div class="col-lg-12 col-md-12">
-                            <div class="row no-gutters mb-4 shadow-sm rounded-lg bg-light">
-                                <!-- article cover -->
-                                <div class="col-12 col-md-3 col-lg-4 p-2">
-                                    <img class="img-fluid rounded-lg" src="assets/img/sample/berita.png">
+                        <!-- article content -->
+                        <div class="col-12 py-3 py-md-3">
+                            <h5 class="mb-0 text-justify">This motivational video will help you achieve a better
+                                work-life balance</h3>
+                                <div class="mb-1 text-dark small mb-3 mt-2">
+                                    <i class="fa-regular fa-calendar mr-3">
+                                        <span>22 Feb 2022</span>
+                                    </i>
+                                    <i class="fa-regular fa-folder">
+                                        <span>Lifestyle</span>
+                                    </i>
                                 </div>
-                                <!-- article content -->
-                                <div class="col-12 col-md-8 col-lg-8 py-2 px-2 py-md-3 px-md-3">
-                                    <h5 class="text-justify">This motivational video will help you achieve a better
-                                        work-life balance</h3>
-                                        <div class="mb-1 text-muted small mb-3 ">
-                                            <i class="fa-regular fa-calendar mr-3">
-                                                <span>22 Feb 2022</span>
-                                            </i>
-                                            <i class="fa-regular fa-folder">
-                                                <span>Lifestyle</span>
-                                            </i>
-                                        </div>
-                                        <p class="card-text mb-2 text-justify text-secondary">Sara began the talk by
-                                            chronicling her ‘busy’ life, she held up multiple work requirements and
-                                            didn’t have any energy upon reaching home.</p>
-                                        <a href="./single-blog.html" class="stretched-link text-dark mt-5"><u>Read
-                                                more</u></a>
-                                </div>
-                            </div>
+                                <p class="card-text mb-auto text-justify text-dark">Sara began the talk by chronicling
+                                    her ‘busy’ life, she held up multiple work requirements and didn’t have any energy
+                                    upon reaching home.</p>
+
+                                <h6 class="font-weight-bold text-dark font-talas-head mt-4 mb-2">
+                                    Tags
+                                    </h4>
+                                    <!-- List -->
+                                    <a href="#"><span class="badge badge-light py-2 px-2 my-1">Happy Life</span></a>
+                                    <a href="#"><span class="badge badge-light py-2 px-2 my-1">Happy Life</span></a>
+                                    <a href="#"><span class="badge badge-light py-2 px-2 my-1">Happy Life</span></a>
+                                    <a href="#"><span class="badge badge-light py-2 px-2 my-1">Happy Life</span></a>
+                                    <a href="#"><span class="badge badge-light py-2 px-2 my-1">Happy Life</span></a>
+                                    <a href="#"><span class="badge badge-light py-2 px-2 my-1">Happy Life</span></a>
+                                    <!-- End List -->
+                                    <br>
+                                    <br>
+                                    Share :
+                                    <a href="#" class="btn align-middle mr-2 btn" style="padding:0">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="btn align-middle mr-2" style="padding:0">
+                                        <i class="fa-brands fa-instagram-square"></i>
+                                    </a>
+                                    <a href="#" class="btn align-middle mr-2" style="padding:0">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="btn align-middle mr-2" style="padding:0">
+                                        <i class="fa-brands fa-whatsapp-square"></i>
+                                    </a>
                         </div>
-                        <div class="col-lg-12 col-md-12">
-                            <div class="row no-gutters mb-4 shadow-sm rounded-lg bg-light">
-                                <!-- article cover -->
-                                <div class="col-12 col-md-3 col-lg-4 p-2">
-                                    <img class="img-fluid rounded-lg" src="assets/img/sample/berita.png">
-                                </div>
-                                <!-- article content -->
-                                <div class="col-12 col-md-8 col-lg-8 py-2 px-2 py-md-3 px-md-3">
-                                    <h5 class="text-justify">This motivational video will help you achieve a better
-                                        work-life balance</h3>
-                                        <div class="mb-1 text-muted small mb-3 ">
-                                            <i class="fa-regular fa-calendar mr-3">
-                                                <span>22 Feb 2022</span>
-                                            </i>
-                                            <i class="fa-regular fa-folder">
-                                                <span>Lifestyle</span>
-                                            </i>
-                                        </div>
-                                        <p class="card-text mb-2 text-justify text-secondary">Sara began the talk by
-                                            chronicling her ‘busy’ life, she held up multiple work requirements and
-                                            didn’t have any energy upon reaching home.</p>
-                                        <a href="./single-blog.html" class="stretched-link text-dark mt-5"><u>Read
-                                                more</u></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Pagination -->
-                    <div class="row py-3 justify-content-center">
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-center">
-                                <li class="page-item disabled">
-                                    <a class="page-link">Prev</a>
-                                </li>
-                                <li class="page-item current-page"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link font-weight-bold" href="#">Next</a>
-                                </li>
-                            </ul>
-                        </nav>
                     </div>
                 </div>
-
                 <!-- Search, Category, Recent, Tag-->
                 <div class="col-lg-4 col-md-4 col-12">
-
                     <div class="row">
                         <!-- Form Search -->
                         <div class="col-12">
@@ -198,15 +161,20 @@
                                 <!-- List -->
                                 <ul class="list-group list-group-flush list-py-1 mb-0">
                                     <li class="list-group-item"><a class="link-sm small link-secondary text-secondary "
-                                            href="#">Food (20) <i class="bi-box-arrow-up-right small ms-1"></i></a></li>
+                                            href="#">Food (20)
+                                            <i class="bi-box-arrow-up-right small ms-1"></i></a></li>
                                     <li class="list-group-item"><a class="link-sm small link-secondary text-secondary"
-                                            href="#">Beauty (15)</a></li>
+                                            href="#">Beauty
+                                            (15)</a></li>
                                     <li class="list-group-item"><a class="link-sm small link-secondary text-secondary"
-                                            href="#">Lifestyle (10)</a></li>
+                                            href="#">Lifestyle
+                                            (10)</a></li>
                                     <li class="list-group-item"><a class="link-sm small link-secondary text-secondary "
-                                            href="#">Travel (8)</a></li>
+                                            href="#">Travel
+                                            (8)</a></li>
                                     <li class="list-group-item"><a class="link-sm small link-secondary text-secondary "
-                                            href="#">Technology (5)</a></li>
+                                            href="#">Technology
+                                            (5)</a></li>
                                 </ul>
                                 <!-- End List -->
                         </div>
