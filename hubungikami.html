@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.17/sweetalert2.min.css"
+        integrity="sha512-fZ1HwrDVLoUUUDGK7gZdHJ4TIMQ9KnleLU/Jgf98v1nGz9umOciIbF3zs3R5stCIY/MVMqReXgUGnxOoWUdZDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
@@ -73,46 +76,49 @@
     </section>
 
     <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mt-3">
+            <div class="section-title my-lg-5 my-sm-2">
+                <!-- hidden only on sm -->
+                <h1 class="display-4 font-weight-bold d-none d-sm-none d-md-block d-lg-block d-xl-block text-center">
+                    Hubungi Kami
+                </h1>
+                <!-- visible only on sm -->
+                <h1 class="display-5 font-weight-bold d-sm-block d-md-none d-lg-none d-xl-none  text-center">
+                    Hubungi Kami
+                </h1>
+            </div>
             <div class="col-md-12">
-                <h2 class="display-4 fw-bold text-center"
-                    style="padding-top: 12px; padding-bottom: 12px; margin-top: 20px;">Hubungi Kami
-                </h2>
-                <div class="wrapper" style="border-radius: 10px;margin-top: 10px;margin-bottom: 10px;">
+                <div class="wrapper my-2" style="border-radius: 8px;">
                     <div class="row no-gutters">
                         <div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
                             <div class="contact-wrap w-100 p-md-5 p-4">
-                                <h3 class="mb-4">Tinggalkan Pesan Di Sini</h3>
-                                <div id="form-message-warning" class="mb-4"></div>
-                                <div id="form-message-success" class="mb-4">
-                                    Terimakasih, telah mengirim pesan :)
-                                </div>
+                                <h3 class="mb-4">Tinggalkan pesan kamu disini</h3>
                                 <form method="POST" id="contactForm" name="contactForm" class="contactForm">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="label" for="name">Nama</label>
                                                 <input type="text" class="form-control" name="name" id="name"
-                                                    placeholder="Masukan Nama Lengkap Anda">
+                                                    placeholder="Masukan nama">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="label" for="email">E-Mail</label>
                                                 <input type="email" class="form-control" name="email" id="email"
-                                                    placeholder="Masukan Alamat E-mail Anda">
+                                                    placeholder="Masukan alamat e-mail">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label class="label" for="#">Pesan</label>
                                                 <textarea name="message" class="form-control" id="message" cols="30"
-                                                    rows="4" placeholder="Masukan Pesan Anda Di Sini"></textarea>
+                                                    rows="4" placeholder="Masukan pesan disini"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <button type="button" class="btn  btn-notaris"
+                                                <button type="button" class="btn  btn-notaris kirim"
                                                     style="float:right;">Kirim
                                                     Pesan</button>
                                             </div>
@@ -122,28 +128,29 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-5 d-flex align-items-stretch">
-                            <div class="info-wrap bg-primary w-100 p-md-5 p-4" style="border-radius: 15px;">
-                                <h3>Lebih Dekat Dengan Kami</h3>
-                                <p class="mb-4">Kami terbuka untuk melayani tanya jawab anda terkait SPKT
+                            <div class="info-wrap w-100 p-md-5 p-4"
+                                style="border-radius: 15px; background-color: #182D48; color: #fff;">
+                                <h3>Ada Pertanyaan?</h3>
+                                <p class="mb-4">Kami terbuka untuk melayani tanya jawab anda
                                     melalui:</p>
                                 <div class="dbox w-100 d-flex ">
-
                                     <div class="text pl-3">
-                                        <p><span>Alamat:</span> Jln. Prabu Gajah Agung No. 07 Kel. Situ Sumedang
-                                            Utara</p>
+                                        <p><i class="fa-solid fa-envelope mr-2"></i><a
+                                                href="mailto:notaris.milham@gmail.com" style="color:
+                                                #fff;">notaris.milham@gmail.com</a></p>
                                     </div>
                                 </div>
                                 <div class="dbox w-100 d-flex ">
-
                                     <div class="text pl-3">
-                                        <p><span>Telepon</span>:</span> <a href="tel://110">110</a></p>
+                                        <p><i class="fa-solid fa-phone mr-2"></i><a href="tel:(022)87704813 "
+                                                style="color: #fff;">(022)87704813</a>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="dbox w-100 d-flex ">
-
                                     <div class="text pl-3">
-                                        <p><span>E-mail:</span> <a href="mailto: spktsmd@example.com"></a>
-                                            spktsmd@example.com</a>
+                                        <p><i class="fa-brands fa-whatsapp mr-2"></i><a href="tel:0813-1222-2936"
+                                                style="color: #fff;">0813-1222-2936</a>
                                         </p>
                                     </div>
                                 </div>
@@ -290,6 +297,20 @@
     <script src="assets/js/jquery.slim.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.17/sweetalert2.all.min.js"
+        integrity="sha512-EBwvoqsGaJWtUXBCosFrz2IJSBJbakIMKDGO4/1eTqPupZ06ITZ2YgJU3PKAJrqzDybFgumQcbJKWNEo0UYnbA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        document.querySelector(".kirim").addEventListener('click', function () {
+            Swal.fire({
+                title: 'Pesanmu Sudah Terkirim',
+                text: 'Cek E-mailmu untuk menemukan jawaban',
+                icon: 'success',
+                timer: 2200,
+                showConfirmButton: false
+            });
+        });
+    </script>
 
 </body>
 
