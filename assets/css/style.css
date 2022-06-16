@@ -124,10 +124,13 @@ h6 {
 
 /* Card Berita*/
 .card-berita {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
+	min-width: 0;
+	word-wrap: break-word;
 	padding: 16px;
 	gap: 8px;
 	background: #182d48;
@@ -138,6 +141,8 @@ h6 {
 
 .card-berita img {
 	border-radius: 8px !important;
+	max-width: 100%;
+	height: auto;
 }
 
 /* Carousel Testimony */
