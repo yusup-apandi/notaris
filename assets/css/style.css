@@ -10,11 +10,11 @@
 
 @font-face {
 	font-family: "bookman-regular";
-	src: url('../assets/font/bookman/Bookman-New-Reg.woff2');
+	src: url('../font/bookman/Bookman-New-Reg.woff2');
 }
 @font-face {
 	font-family: "bookman-bold";
-	src: url('../assets/font/bookman/Bookman-New-Bold.woff2');
+	src: url('../font/bookman/Bookman-New-Bold.woff2');
 }
 
 html,
