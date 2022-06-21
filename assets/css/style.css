@@ -122,6 +122,31 @@ h6 {
 	background: #182d48;
 }
 
+/* Card Penghargaan*/
+.card-penghargaan {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	min-width: 0;
+	word-wrap: break-word;
+	padding: 16px;
+	gap: 24px;
+	background: #fafafa;
+	border-radius: 12px;
+	color: #141416;
+	align-items: center;
+	border: none;
+}
+
+.card-penghargaan img {
+	border-radius: 8px !important;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
 /* Card Berita*/
 .card-berita {
 	position: relative;
