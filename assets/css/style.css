@@ -745,3 +745,14 @@ a {
 		flex-direction: row;
 	}
 }
+
+/* gallery */
+
+.content {
+	padding: 10px;
+}
+
+.btn.active {
+	background-color: #071229;
+	color: white;
+}

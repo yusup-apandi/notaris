@@ -205,36 +205,54 @@
                 </h3>
             </div>
             <div class="row py-3">
-                <div class="card-columns px-2">
-                    <div class="card" style="border: none;">
-                        <a href="assets/img/sample/g1.png" data-fancybox="gallery" data-caption="Caption Images 1">
-                            <img src="assets/img/sample/g1.png" class="card-img-top rounded-lg" alt="Image Gallery">
-                        </a>
+                <div class="mx-auto text-center mb-1">
+                    <button class="btn btn-notaris filter-button" data-filter="all">Semua</button>
+                    <button class="btn filter-button" data-filter="keg">Kegiatan Kantor</button>
+                    <button class="btn filter-button" data-filter="pek">Pekerjaan Kantor</button>
+                    <button class="btn filter-button" data-filter="peng">Penghargaan & Mitra Kerja</button>
+                </div>
+                <div class="card-columns">
+                    <div class="filter keg">
+                        <div class="card content" style="border: none;">
+                            <a href="assets/img/sample/g2.png" data-fancybox="gallery" data-caption="Caption Images 1">
+                                <img src="assets/img/sample/g2.png" class="card-img-top rounded-lg" alt="Image Gallery">
+                            </a>
+                        </div>
                     </div>
-                    <div class="card" style="border: none;">
-                        <a href="assets/img/sample/g2.png" data-fancybox="gallery" data-caption="Caption Images 1">
-                            <img src="assets/img/sample/g2.png" class="card-img-top rounded-lg" alt="Image Gallery">
-                        </a>
+                    <div class="filter keg">
+                        <div class="card content" style="border: none;">
+                            <a href="assets/img/sample/g3.png" data-fancybox="gallery" data-caption="Caption Images 1">
+                                <img src="assets/img/sample/g3.png" class="card-img-top rounded-lg" alt="Image Gallery">
+                            </a>
+                        </div>
                     </div>
-                    <div class="card" style="border: none;">
-                        <a href="assets/img/sample/g3.png" data-fancybox="gallery" data-caption="Caption Images 1">
-                            <img src="assets/img/sample/g3.png" class="card-img-top rounded-lg" alt="Image Gallery">
-                        </a>
+                    <div class="filter keg">
+                        <div class="card content" style="border: none;">
+                            <a href="assets/img/sample/g4.png" data-fancybox="gallery" data-caption="Caption Images 1">
+                                <img src="assets/img/sample/g4.png" class="card-img-top rounded-lg" alt="Image Gallery">
+                            </a>
+                        </div>
                     </div>
-                    <div class="card" style="border: none;">
-                        <a href="assets/img/sample/g4.png" data-fancybox="gallery" data-caption="Caption Images 1">
-                            <img src="assets/img/sample/g4.png" class="card-img-top rounded-lg" alt="Image Gallery">
-                        </a>
+                    <div class="filter peng">
+                        <div class="card content" style="border: none;">
+                            <a href="assets/img/sample/g5.png" data-fancybox="gallery" data-caption="Caption Images 1">
+                                <img src="assets/img/sample/g5.png" class="card-img-top rounded-lg" alt="Image Gallery">
+                            </a>
+                        </div>
                     </div>
-                    <div class="card" style="border: none;">
-                        <a href="assets/img/sample/g5.png" data-fancybox="gallery" data-caption="Caption Images 1">
-                            <img src="assets/img/sample/g5.png" class="card-img-top rounded-lg" alt="Image Gallery">
-                        </a>
+                    <div class="filter pek">
+                        <div class="card content" style="border: none;">
+                            <a href="assets/img/sample/g6.png" data-fancybox="gallery" data-caption="Caption Images 1">
+                                <img src="assets/img/sample/g6.png" class="card-img-top rounded-lg" alt="Image Gallery">
+                            </a>
+                        </div>
                     </div>
-                    <div class="card" style="border: none;">
-                        <a href="assets/img/sample/g6.png" data-fancybox="gallery" data-caption="Caption Images 1">
-                            <img src="assets/img/sample/g6.png" class="card-img-top rounded-lg" alt="Image Gallery">
-                        </a>
+                    <div class="filter pek">
+                        <div class="card content" style="border: none;">
+                            <a href="assets/img/sample/g1.png" data-fancybox="gallery" data-caption="Caption Images 1">
+                                <img src="assets/img/sample/g1.png" class="card-img-top rounded-lg" alt="Image Gallery">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -383,6 +401,29 @@
             ],
             loop: false,
             protect: true
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $(".filter-button").click(function () {
+                var value = $(this).attr('data-filter');
+                if (value == "all") {
+                    //$('.filter').removeClass('hidden');
+                    $('.filter').show('1000');
+                } else {
+                    //$('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                    //$(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                    $(".filter").not('.' + value).hide('3000');
+                    $('.filter').filter('.' + value).show('3000');
+                }
+            });
+
+            if ($(".filter-button").removeClass("active")) {
+                $(this).removeClass("active");
+            }
+            $(this).addClass("active");
+
         });
     </script>
 
