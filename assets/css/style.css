@@ -760,3 +760,13 @@ a {
 	background-color: #071229;
 	color: white;
 }
+
+/*list updated css*/
+ul {
+	padding-left: 24px;
+	padding-right: 24px;
+	text-align: justify;
+}
+.bg-pel {
+	background-color: #d5e9f5;
+}

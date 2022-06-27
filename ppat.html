@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notaris & PPAT M.Ilham</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <!--Font Google-->
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.17/sweetalert2.min.css"
+        integrity="sha512-fZ1HwrDVLoUUUDGK7gZdHJ4TIMQ9KnleLU/Jgf98v1nGz9umOciIbF3zs3R5stCIY/MVMqReXgUGnxOoWUdZDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <!-- NAVBAR-->
+    <nav class="navbar fixed-top navbar-expand-lg py-3 navbar-light  blur ">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">
+                <!-- Logo Image -->
+                <img src="assets/img/logo.png" width="auto" height="34" alt="" class="d-inline-block align-middle mr-2">
+            </a>
+
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item  active dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Layanan</a>
+                        <div class="dropdown-menu" style="border: none; background-color:#fafafa">
+                            <a class="dropdown-item" href="notaris.html">Notaris</a>
+                            <a class="dropdown-item" href="ppat.html">PPAT</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="profil.html" class="nav-link">Profil</a></li>
+                    <li class="nav-item"><a href="hubungikami.html" class="nav-link">Hubungi Kami</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Head Section -->
+    <section class="main d-flex bg-light py-5" style="margin-top: 84px;">
+        <div class="container justify-content-center">
+            <div class="section-title">
+                <h1 class="display-3 font-weight-bold text-center">
+                    Layanan PPAT
+                </h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent d-flex justify-content-center">
+                        <li class="breadcrumb-item"><a class="text-dark" href="./index.html">Beranda</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Layanan PPAT</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="main py-4">
+        <div class="container-fluid px-lg-5">
+            <div class="row px-lg-5">
+                <!-- List Pelyananan-->
+                <div class="col-lg-3 col-md-3 col-12 bg-pel" style="border-radius: 16px;">
+                    <div class="row">
+                        <!-- Category -->
+                        <div class="col-12 my-3">
+                            <h6 class="font-weight-bold text-dark">
+                                Pelayanan
+                            </h6>
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
+                                <a class="nav-link active" id="v-pills-list1-tab" data-toggle="pill"
+                                    href="#v-pills-list1" role="tab" aria-controls="v-pills-list1"
+                                    aria-selected="true">Permohonan Peralihan
+                                    Hak (Balik Nama Waris) Sertifikat</a>
+                                <a class="nav-link" id="v-pills-list2-tab" data-toggle="pill" href="#v-pills-list2"
+                                    role="tab" aria-controls="v-pills-list2" aria-selected="false">Permohonan
+                                    Peralihan Hak (Balik Nama Jual Beli) Sertifikat</a>
+                                <a class="nav-link" id="v-pills-list3-tab" data-toggle="pill" href="#v-pills-list3"
+                                    role="tab" aria-controls="v-pills-list3" aria-selected="false">Permohonan
+                                    Pemecahan/Pemisahan</a>
+                                <a class="nav-link" id="v-pills-list4-tab" data-toggle="pill" href="#v-pills-list4"
+                                    role="tab" aria-controls="v-pills-list4" aria-selected="false">Permohonan Peralihan
+                                    Hak (Balik Nama Hibah) Sertifikat</a>
+                                <a class="nav-link" id="v-pills-list5-tab" data-toggle="pill" href="#v-pills-list5"
+                                    role="tab" aria-controls="v-pills-list5" aria-selected="false">Permohonan Sertifikat
+                                    Pengganti karena Hilang, Rusak, Blanko
+                                    Lama</a>
+                                <a class="nav-link" id="v-pills-list6-tab" data-toggle="pill" href="#v-pills-list6"
+                                    role="tab" aria-controls="v-pills-list6" aria-selected="false">Permohonan Roya</a>
+                                <a class="nav-link" id="v-pills-list7-tab" data-toggle="pill" href="#v-pills-list7"
+                                    role="tab" aria-controls="v-pills-list7" aria-selected="false">Permohonan
+                                    Pengukuran</a>
+                                <a class="nav-link" id="v-pills-list8-tab" data-toggle="pill" href="#v-pills-list8"
+                                    role="tab" aria-controls="v-pills-list8" aria-selected="false">Permohonan Sertifikat
+                                    Perubahan Hak Guna Bangunan Ke Hak Milik
+                                </a>
+                                <a class="nav-link" id="v-pills-list9-tab" data-toggle="pill" href="#v-pills-list9"
+                                    role="tab" aria-controls="v-pills-list9" aria-selected="false">Permohonan Sertifikat
+                                    (Asal Tanah Milik Adat)
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content Layanan -->
+                <div class="col-lg-9 col-md-9 col-12 pr-lg-4 pr-md-4">
+                    <!-- Article List -->
+                    <div class="row no-gutters">
+                        <div class="col-12 py-3 py-md-3">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-list1" role="tabpanel"
+                                    aria-labelledby="v-pills-list1-tab">
+                                    <h3 class="text-center mb-2">Permohonan Peralihan Hak (Balik Nama Waris)
+                                        Sertifikat</h3>
+                                    <ul style="list-style-type: upper-alpha;">
+                                        <li>Berkas Peryaratan:
+                                            <ol style=" list-style-type: circle; margin-bottom: 8px;">
+                                                <li>Mengisi formulir permohonan;</li>
+                                                <li>Fotocopy surat kematian;</li>
+                                                <li>Fotocopy Kartu Keluarga(KK) seluruh ahli waris;</li>
+                                                <li>Fotocopy KTP seluruh ahli waris atau Surat Keterangan Ahli Waris;
+                                                </li>
+                                                <li>Fotocopy Surat Pemberitahuan Pajak Terutang(SPPT) Pajak Bumi
+                                                    Bangunan(PBB) tahun berjalan;
+                                                </li>
+                                                <li>Bea Perolehan Hak atas Tanah dan Bangunan(BPHTB) waris yang telah
+                                                    diverifikasi oleh Dispenda;</li>
+                                                <li>Surat kuasa bila dikuasakan berserta fotocopy KTP penerima kuasa.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>Catatan:
+                                            <p>Surat kuasa bila dikuasakan berserta fotocopy Kartu Tanda Penduduk(KTP)
+                                                penerima kuasa.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-list2" role="tabpanel"
+                                    aria-labelledby="v-pills-list2-tab">
+                                    <h3 class="text-center mb-2">Permohonan Peralihan Hak (Balik Nama Jual Beli)
+                                        Sertifikat
+                                    </h3>
+                                    <ul style="list-style-type: upper-alpha;">
+                                        <li>Berkas Peryaratan:
+                                            <ol style=" list-style-type: circle; margin-bottom: 8px;">
+                                                <li>Mengisi formulir permohonan;</li>
+                                                <li>Sertifikat asli;</li>
+                                                <li>Fotocopy Kartu Tanda Penduduk(KTP) penjual (suami & istri);</li>
+                                                <li>Fotocopy Kartu Keluarga(KK) penjual;
+                                                </li>
+                                                <li>Fotocopy akta nikah penjual;
+                                                </li>
+                                                <li>Fotocopy KTP pembeli;</li>
+                                                <li>Fotocopy SPPT PBB tahun berjalan;
+                                                </li>
+                                                <li>Akta jual beli;</li>
+                                                <li>Bea Perolehan Hak atas Tanah dan Bangunan(BPHTB) yang divalidasi
+                                                    dari
+                                                    Dispenda;</li>
+                                                <li>Surat kuasa bila dikuasakan beserta fotocopy KTP penerima kuasa.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>Catatan:
+                                            <p>Semua fotocopy dilegalisir oleh desa/kecamatan setempat/PPAT
+                                                .</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-list3" role="tabpanel"
+                                    aria-labelledby="v-pills-list3-tab">
+                                    <h3 class="text-center mb-2">Permohonan Pemecahan/Pemisahan
+                                    </h3>
+                                    <ul style="list-style-type: upper-alpha;">
+                                        <li>Berkas Peryaratan:
+                                            <ol style=" list-style-type: circle; margin-bottom: 8px;">
+                                                <li>Mengisi formulir permohonan;</li>
+                                                <li>Sertifikat induk asli;</li>
+                                                <li>Fotocopy Kartu Tanda Penduduk(KTP) pemilik sertifikat;</li>
+                                                <li>Fotocopy Kartu Keluarga(KK) pemilik sertifikat;
+                                                </li>
+                                                <li>Fotocopy Surat Pemberitahuan Pajak Terutang(SPPT) Pajak Bumi
+                                                    Bangunan(PBB) tahun berjalan
+                                                    dan bukti lunas;
+                                                </li>
+                                                <li>Alasan pemecahan;</li>
+                                                <li>Fotocopy KTP saksi dari 2 desa 2 orang;
+                                                </li>
+                                                <li>Surat kuasa apabila dikuasakan.</li>
+                                            </ol>
+                                        </li>
+                                        <li>Catatan:
+                                            <ol style=" list-style-type: circle; margin-bottom: 8px;">
+                                                <li>Semua yang difotocopy harus dilegalisir dari desa.</li>
+                                                <li>Dibawah 5 bidang lampirkan aspek/penatagunaan tanah.</li>
+                                                <li>Diatas 5 bidang lampirkan Site Plan dari Dinas PUPR Kab.Sumedang
+                                                    .</li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-list4" role="tabpanel"
+                                    aria-labelledby="v-pills-list4-tab">
+                                    <h3 class="text-center mb-2">Permohonan Peralihan Hak (Balik Nama Hibah) Sertifikat
+                                    </h3>
+                                    <ul style="list-style-type: upper-alpha;">
+                                        <li>Berkas Peryaratan:
+                                            <ol style=" list-style-type: circle; margin-bottom: 8px;">
+                                                <li>Mengisi formulir permohonan;</li>
+                                                <li>Fotocopy Kartu Tanda Penduduk(KTP) pemberi hibah (suami & istri);
+                                                </li>
+                                                <li>Fotocopy Kartu Keluarga(KK) pemeberi hibah;</li>
+                                                <li>Fotocopy akta nikah pemeberi hibah;
+                                                </li>
+                                                <li>Fotocopy Kartu Tanda Penduduk(KTP) penerima hibah;
+                                                </li>
+                                                <li>Fotocopy Surat Pemberitahuan Pajak Terutang(SPPT) Pajak Bumi
+                                                    Banguan(PBB) tahun berjalan;
+                                                </li>
+                                                <li>Akta Hibah;
+                                                </li>
+                                                <li>Bea Perolehan Hak atas Tanah dan Bangunan(BPHTB) hibah yang
+                                                    divalidasi Dispenda;</li>
+                                                <li>Surat kuasa bila dikuasakan beserta fotocopy Kartu Tanda
+                                                    Penduduk(KTP) penerima kuasa.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>Catatan:
+                                            <p>Semua fotocopy dilegalisir oleh desa/kecamatan setempat/PPAT
+                                                .</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-list5" role="tabpanel"
+                                    aria-labelledby="v-pills-list5-tab">
+                                    <h3 class="text-center mb-2">Permohonan Sertifikat Pengganti karena Hilang, Rusak,
+                                        Blanko Lama
+                                    </h3>
+                                    <ul style="list-style-type: upper-alpha;">
+                                        <li>Berkas Peryaratan:
+                                            <ol style=" list-style-type: circle; margin-bottom: 8px;">
+                                                <li>Mengisi formulir permohonan;</li>
+                                                <li>Sertifikat asli untuk sertifikat rusak dan lama;
+                                                </li>
+                                                <li>Fotocopy sertifikat untuk sertifikat yang hilang;</li>
+                                                <li>Fotocopy Kartu Tanda Penduduk(KTP);
+                                                </li>
+                                                <li>Fotocopy Kartu Keluarga(KK);
+                                                </li>
+                                                <li>Fotocopy Surat Pemberitahuan Pajak Terutang(SPPT) Pajak Bumi
+                                                    Banguan(PBB) tahun berjalan;
+                                                </li>
+                                                <li>Surat kuasa dan fotocopy Kartu Tanda Penduduk(KTP) penerima
+                                                    kuasa(apabila dikuasakan).
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>Catatan:
+                                            <p>Semua yang berupa fotocopy dilegalisir oleh desa atau camat setempat
+                                                .</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-list6" role="tabpanel"
+                                    aria-labelledby="v-pills-list6-tab">
+                                    <h3 class="text-center mb-2">Permohonan Roya
+                                    </h3>
+                                    <ul style="list-style-type: upper-alpha;">
+                                        <li>Berkas Peryaratan:
+                                            <ol style=" list-style-type: circle; margin-bottom: 8px;">
+                                                <li>Mengisi formulir permohonan;</li>
+                                                <li>Sertifikat asli;
+                                                </li>
+                                                <li>Sertikat Hak Tanggungan;</li>
+                                                <li>Fotocopy Kartu Tanda Penduduk(KTP) pemohon;
+                                                </li>
+                                                <li>Surat Roya dari Bank;
+                                                </li>
+                                                <li>Surat laporan kepolisian apabila sertifikat hak tanggungan hilang;
+                                                </li>
+                                                <li>Surat kuasa bila dikuasakan + fotocopy Kartu Tanda Penduduk(KTP).
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>Catatan:
+                                            <ol style=" list-style-type: circle; margin-bottom: 8px;">
+                                                <li>Sertifikat harus sudah link peta.</li>
+                                                <li>Semua fotocopy dilegalisir desa/kecamatan setempat/PPAT.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-list7" role="tabpanel"
+                                    aria-labelledby="v-pills-list7-tab">
+                                    <h3 class="text-center mb-2">Permohonan Pengukuran
+                                    </h3>
+                                    <ul style="list-style-type: upper-alpha;">
+                                        <li>Berkas Peryaratan:
+                                            <ol style=" list-style-type: circle; margin-bottom: 8px;">
+                                                <li>Mengisi formulir permohonan;</li>
+                                                <li>Fotocopy Kartu Tanda Penduduk(KTP) (surat kuasa bila dikuasakan);
+                                                </li>
+                                                <li>Fotocopy Kartu Tanda Penduduk(KTP) penerima kuasa;</li>
+                                                <li>Alas Hak (sertifikat/fotocopy Akta Jual Beli(AJB)/fotocopy akta
+                                                    hibah/fotocopy
+                                                    Akta Pembagian Hak Bersama(APHB);
+                                                </li>
+                                                <li>Surat Pemberitahuan Pajak Terutang(SPPT) Pajak Bumi Bangunan(PBB)
+                                                    tahun terakhir.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-list8" role="tabpanel"
+                                    aria-labelledby="v-pills-list8-tab">
+                                    <h3 class="text-center mb-2">Permohonan Sertifikat Perubahan Hak Guna Bangunan Ke
+                                        Hak Milik
+                                    </h3>
+                                    <ul style="list-style-type: upper-alpha;">
+                                        <li>Berkas Peryaratan:
+                                            <ol style=" list-style-type: circle; margin-bottom: 8px;">
+                                                <li>Mengisi formulir permohonan;</li>
+                                                <li>Sertifikat asli;
+                                                </li>
+                                                <li>Fotocopy Kartu Tanda Penduduk(KTP) dan kartu Keluarga(KK) pemilik di
+                                                    sertifikat</li>
+                                                <li>Fotocopy Surat Pemberitahuan Pajak Terutang(SPPT) Pajak Bumi dan
+                                                    Bangunan(PBB) tahun berjalan
+                                                    dan bukti lunasnya;
+                                                </li>
+                                                <li>Fotocopy Ijin Mendirikan Bangunan(IMB);
+                                                </li>
+                                                <li>Fotocopy Akta Jual Beli(AJB);
+                                                </li>
+                                                <li>Surat kuasa apabila dikuasakan dan fotocopy Kartu Tanda
+                                                    Penduduk(KTP) yang dikuasakan;
+                                                </li>
+                                                <li>Foto rumah, foto no rumah, dan foto rumah beserta rumah tetangga
+                                                    (kiri & kanan)</li>
+                                            </ol>
+                                        </li>
+                                        <li>Catatan:
+                                            <p>Semua yang di fotocopy harus dilegalisir oleh desa/kecamatan
+                                                setempat/PPAT
+                                                .</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-list9" role="tabpanel"
+                                    aria-labelledby="v-pills-list9-tab">
+                                    <h3 class="text-center mb-2">Permohonan
+                                        Sertifikat Pengganti karena Hilang, Rusak,
+                                        Blanko LamaPermohonan Sertifikat (Asal Tanah Milik Adat)
+                                    </h3>
+                                    <ul style="list-style-type: upper-alpha;">
+                                        <li>Berkas Peryaratan:
+                                            <ol style=" list-style-type: circle; margin-bottom: 8px;">
+                                                <li>Mengisi formulir permohonan;</li>
+                                                <li>Akta Jual Beli(AJB)/ Akta Hibah /Akta Pembagian Hak Bersama(APHB)
+                                                    Asli
+                                                </li>
+                                                <li>Fotocopy Kartu Tanda Penduduk(KTP) penjual dan pembeli;</li>
+                                                <li>Fotocopy Kartu Keluarga(KK) Penjual dan pembeli;
+                                                </li>
+                                                <li>Fotocopy Kartu Keluarga(KK);
+                                                </li>
+                                                <li>Fotocopy Nomor Pokok Wajib Pajak(NPWP) Pembeli;
+                                                </li>
+                                                <li>Fotocopy Surat Pemberitahuan Pajak Terutang (SPPT) PBB tahun
+                                                    berjalan;
+                                                </li>
+                                                <li>Salinan C dari desa yang bersangkutan;</li>
+                                                <li>Bea Perolehan Hak atas Tanah dan Bangunan(BPHTB) + Pajak
+                                                    Penghasilan(PPh) apabila Akta Jual Beli(AJB)
+                                                    tahun 2009 ke atas;</li>
+                                                <li>Fotocopy Kartu Tanda Penduduk(KTP) saksi dari desa 2 orang;</li>
+                                                <li>Surat kuasa apabila dikuasakan disertakan fotocopy kartu Tanda
+                                                    Penduduk(KTP).</li>
+                                            </ol>
+                                        </li>
+                                        <li>Catatan:
+                                            <p>Semua yang difotocopy harus dilegalisir dari desa atau camat setempat
+                                                .</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <section class="main d-flex pb-3 pt-5" style="background-color: #0C1933;">
+        <div class="container-fluid align-items-center justify-content-center">
+            <div class="row px-lg-5 px-xl-5 mx-lg-5 mx-xl-5">
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 py-3 py-md-3">
+                    <img src="assets/img/logo.png" width="auto" height="40" alt=""
+                        class="d-inline-block align-middle mr-2">
+                    <!-- always visible on any screen -->
+                    <p class="my-3  text-white">
+                        SIIP LAH (Sinergi, Inovatif, Integritas, Profesional, Loyalitas, Amanah, dan Harmonis).
+                    </p>
+                    <button type="button" class="btn btn-circle text-white" href="#">
+                        <i class="fa-brands fa-instagram "></i>
+                    </button>
+                    <button type="button" class="btn btn-circle text-white " href="#">
+                        <i class="fa-brands fa-twitter "></i>
+                    </button>
+                    <button type="button" class="btn btn-circle text-white" href="#">
+                        <i class="fa-brands fa-youtube "></i>
+                    </button>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 py-3 py-md-3">
+                    <h2 class="text-white">
+                        Alamat Kantor
+                    </h2>
+
+                    <p class="my-3 text-white">
+                        Kawasan Ruko Blok R.13 Janati Park Cibeusi, Jatinangor, Kabupaten Sumedang, Jawa Barat 45363
+                    </p>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 py-3 py-md-3">
+                    <h2 class=" text-white ">
+                        Jadwal Buka
+                    </h2>
+
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 my-3">
+                        <li class="text-white">Senin- Rabu: 08:00 sd 16:00</li>
+                        <li class="text-white">Sabtu: 08:00 sd 12:00</li>
+                        <li class="text-white">Minggu : Libur</li>
+
+                    </ul>
+                    <!-- End List -->
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 py-3 py-md-3">
+                    <h2 class="text-white">
+                        Hubungi Kami
+                    </h2>
+
+                    <!-- List -->
+                    <ul class="list-unstyled list-py-1 my-3">
+                        <li>
+                            <p class="text-white">
+                                <i class="fa-solid fa-envelope mr-2"></i><a href="mailto:notaris.milham@gmail.com"
+                                    style="color:
+                                                #fff;">notaris.milham@gmail.com</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-white">
+                                <i class="fa-solid fa-phone mr-2"></i><a href="tel:(022)87704813 "
+                                    style="color: #fff;">(022)87704813</a>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="text-white">
+                                <i class="fa-brands fa-whatsapp mr-2"></i><a
+                                    href="https://wa.me/6281312222936?text=Hallo,%20saya%20ingin%20konsultasi"
+                                    target="_blank" style="color: #fff;">0813-1222-2936</a>
+                            </p>
+                        </li>
+                    </ul>
+                    <!-- End List -->
+                </div>
+            </div>
+            <!-- End Row -->
+
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="w-md-85 text-lg-center mx-lg-auto">
+                        <p class="text-white text-center">© 2022 Kantor Notaris & PPAT Muhammad Ilham Ramadhan Putra,
+                            S.H., M.Kn. </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End Copyright -->
+        </div>
+    </section>
+
+    <!--JS-->
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
